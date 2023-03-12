@@ -23,6 +23,6 @@ If that is the case, I will be sure to list the packages here along with a scrip
 ## Questions?
 
 If you have questions about how some of the scripts work, please first look at my KB (assuming its working)  
-[My Kownlage Base](https://kb.allofsky.com/)  
+[My Knowlage-Base](https://kb.allofsky.com/)  
 
 Otherwise, please feel free to email me at <lobrien@uccs.edu>
