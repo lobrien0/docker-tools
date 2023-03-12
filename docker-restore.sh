@@ -28,8 +28,16 @@ if [ $# -eq 0 ]; then
 	echo "[ ] Please enter the filepath of the .7z container backup!"; echo
 	exit 1
 
+# Checks to make sure file is a 7zip archive
+elif ! $(echo $1 | grep -Fq ".7z"); then
+        echo
+        echo "[-] This is not in expected backup file format"
+        echo "[ ] Please be sure this backup was made with the following backup script:"
+        echo "[ ] https://github.com/skymotic/docker-tools/blob/main/docker-backup.sh "
+        echo
+
 # Checks the input to make sure the file exsists
-elif [ -f "$1" ]
+elif [ -f "$1" ]; then
 
 	# Defines the name of the container based of file name
 	ContainerName=$(echo $1 | sed -rn 's|(.*)\.7z|\1|p')
@@ -68,3 +76,4 @@ elif [ -f "$1" ]
 # Errors out if File does not exsist
 else
 	echo "[-] Files doesn't exsist"
+fi

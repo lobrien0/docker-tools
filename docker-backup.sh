@@ -32,7 +32,7 @@ if [ $# -eq 0 ]; then
 	exit 1
 
 # Checks the input to see if Docker container with that name exsists
-elif $(echo $TEMP | grep -Fq "$1"); then
+elif $(echo $TEMP | grep -Fwq "$1"); then
 
 	# Defines Container name for rest of script
 	ContainerName=$1
@@ -66,3 +66,4 @@ else
 	echo
 	echo "[-] ${1}, is not an exsisting container..."; echo
 fi
+
