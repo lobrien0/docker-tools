@@ -16,9 +16,10 @@ If that is the case, I will be sure to list the packages here along with a scrip
 
 > Everything assumes you already have Docker installed on your System!
 
-> Packages:  
-> `p7zip-full`  
-> `p7zip-rar`
+#### Packages:  
+
+`p7zip-full`  
+`p7zip-rar`
 
 ## Questions?
 
